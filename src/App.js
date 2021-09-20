@@ -1,7 +1,18 @@
-import React from "react";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
-  return <div>hi</div>;
+  return (
+    <Switch>
+      <Route exact path="/">
+        This is home page
+      </Route>
+      <Route exact path="/nitik">
+        This is nitik.
+      </Route>
+      <Route>This is 404 Page</Route>
+    </Switch>
+  );
 }
 
 export default App;
