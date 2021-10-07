@@ -29,6 +29,7 @@ const Home = () => {
   const onRadioChange = ev => {
     setSearchOption(ev.target.value);
   };
+  // eslint-disable-next-line no-console
   console.log(searchOption);
   const renderResult = () => {
     if (results && results.length === 0) {
